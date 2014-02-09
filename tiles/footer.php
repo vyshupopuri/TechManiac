@@ -1,11 +1,8 @@
-
-      <hr>
-
-      <footer>
-        <p>Vyshnavi Popuri & Shravan Chouti &copy; 2013</p>
-      </footer>
+	<hr>
+	<footer>
+		<p>&copy; Vyshnavi Popuri & Shravan Chouti, 2014</p>
+	</footer>
     </div> <!-- /container -->
-
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
