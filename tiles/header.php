@@ -31,7 +31,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Tech Maniac</a>
+				<a style =" color: #0489B1; font-size: 22px;"class="navbar-brand" href="#">TECH MANIAC</a>
     		</div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,8 +44,8 @@
 				
 				<?php if(array_key_exists('userid', $_SESSION)){ ?>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a>Hello <?= $_SESSION['username'] ?>!</a></li>
-					<li><a href="logout.php">Logout</a></li>
+					<li class="active"><a style="font-size:18px;"><?= $_SESSION['username'] ?></a></li>
+					<li><a style="font-size:18px;" href="logout.php">Logout</a></li>
       			</ul>
 				<?php }
 				else { ?>
@@ -59,4 +59,11 @@
     		</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-    <div class="container">
+	<div class="container">
+	<?php 
+	if(array_key_exists('error', $_SESSION)) {
+		?><span class="label label-warning pull-right"><?= $_SESSION['error'] ?></span><?php
+		unset($_SESSION['error']);
+	} ?>
+
+    

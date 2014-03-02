@@ -2,7 +2,7 @@
 	session_start();
 	include_once('./dbconnect.php');
 	if($_POST) {
-		$query = sprintf("SELECT userid FROM login WHERE username='%s' AND password='%s'",
+		$query = sprintf("SELECT userid FROM login WHERE username='%s' AND binary password='%s'",
 						mysql_real_escape_string($_POST['username']),
 						mysql_real_escape_string($_POST['password'])
 				);
@@ -15,11 +15,13 @@
 			die($message);
 		}
 		//print_r($result);
-		while ($row = mysql_fetch_assoc($result)) {
+		if($row = mysql_fetch_assoc($result)) {
 			$_SESSION['userid'] = $row['userid'];
 			$_SESSION['username'] = $_POST['username'];
-			
-			header("location: ../index.php");
 		}
+		else{
+			$_SESSION['error'] = 'Userid Password combination is not found';
+		}
+		header("location: ../index.php");
 	}
 ?>

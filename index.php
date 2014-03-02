@@ -1,27 +1,26 @@
 <?php include_once('tiles/header.php'); ?>
-      <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <h1 style=" color:#ffffff;">Hello <?= $_SESSION['username'] ?>!</h1>
+        <p style="font-family:arial; color:#000000;font-size:19px;">Welcome to the forum that gives you all technological updates at one place! We aim to be a friendly, educational community dedicated to technology. Here, you'll meet other technology enthusiasts who love talking and assisting people with technical questions on computer science, gadgets, software, hardware related discussions and more.</p>
       </div>
-
-      <!-- Example row of columns -->
       <div class="row">
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2 style=" color:#ffffff;">Features</h2>
+          <p style="font-family:arial; color:#000000;font-size:19px;"> 1. Well, you can start any technology related discussion and trust us, you'll find the best possible updates and solutions.<br>
+			 2. You can respond to other's posts.<br>
+			 3. You can choose from the different topics available and get the related news.<br>
+			 4. You can view all the messages posted by a particular user.</p>
+          <p><a style=" color:#ffffff; font-size:17px; " class="btn" href="#">View details &raquo;</a></p>
         </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2 style=" color:#ffffff;">Uses</h2>
+          <p style="font-family:arial; color:#000000;font-size:19px;">Updates on latest technologies, software, hardware, science, news, gadgets.  Actually everything!</p>
+          <p><a style=" color:#ffffff; font-size:17px; " class="btn" href="#">View details &raquo;</a></p>
        </div>
         <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
+          <h2 style=" color:#ffffff;">Contact Us</h2>
+          <p style="font-family:arial; color:#000000;font-size:19px;">We give you all the required information on the forum.</p>
+          <p><a style=" color:#ffffff; font-size:17px; " class="btn" href="#">View details &raquo;</a></p>
         </div>
       </div>
 

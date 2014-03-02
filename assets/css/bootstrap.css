@@ -277,7 +277,13 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333;
-  background-color: #fff;
+  background-image:url(images.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+    background-size: cover;
+    height: 100%;
+	width: 100%;
+  background-color:#A9BCF5;
 }
 input,
 button,

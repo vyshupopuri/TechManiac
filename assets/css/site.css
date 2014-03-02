@@ -14,3 +14,9 @@ body {
 .glyphicon-2x {
     font-size: 16px;
 }
+
+.postinfo {
+	position:absolute; bottom: 0; right: 0; 
+	width: 400px; 
+	text-align:right;
+}

@@ -15,8 +15,7 @@
 			die($message);
 		}
 	}
-?>	
-
+?>
 <ol class="breadcrumb">
   <li><a href="index"><span class="glyphicon glyphicon-home"></span></a></li>
   <li><a href="forums">Forums</a></li>
@@ -35,7 +34,7 @@ while ($row = mysql_fetch_assoc($result)) { ?>
 <div class="panel panel-primary">
 	<!-- Default panel contents -->
 	<div class="panel-heading">
-		<a class="txtWht" href="forums?id=<?= $row['topicid'] ?>"><?= $row['name'] ?></a>
+		<a style="font-size: 20px;"class="txtWht" href="forums?id=<?= $row['topicid'] ?>"><?= $row['name'] ?></a>
 		<span class="badge pull-right"><?= $row['total'] ?></span>
 		
 	</div>
@@ -52,15 +51,16 @@ while ($row = mysql_fetch_assoc($result)) { ?>
 			<!-- List group -->
 			<li data-target="#" class="list-group-item clickable">
 				<p><?= $post['message'] ?></p>
-				<span>Posted by <a href="#"><?= $post['username'] ?></a> <?= date("M j, Y, g:i a", strtotime($post['time'])) ?></span>
+				<span class="postinfo">Posted by <a href="#"><?= $post['username'] ?></a> <?= date("M j, Y, g:i a", strtotime($post['time'])) ?></span>
 			</li>
 	<?php } ?>
+	<?php if($_SESSION['userid']) { ?>
 	<li data-target="#" class="list-group-item">
-		
 		<button type="button" class="btn btn-default btnNewPost" data-topicid="<?= $row['topicid'] ?>">
 		  <span class="glyphicon glyphicon-plus"></span> New Post
 		</button>
 	</li>
+	<?php } ?>
 	</ul>
 </div>
 <?php } ?>

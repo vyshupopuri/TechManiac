@@ -1,6 +1,6 @@
 	<hr>
 	<footer>
-		<p>&copy; Vyshnavi Popuri & Shravan Chouti, 2014</p>
+		<p style="font-family:arial; color:#ffffff;font-size:17px; pull right;">&copy; Vyshnavi Popuri & Shravan Chouti, 2014</p>
 	</footer>
     </div> <!-- /container -->
     <!-- Le javascript
